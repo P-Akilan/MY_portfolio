@@ -1,0 +1,245 @@
+  #main{  
+    /*font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    font-family: 'Inter', sans-serif;
+    transition: margin-left 0.5s;
+    background-image: url("./../Others/hamish-weir-aYEUXnVG8tg-unsplash.jpg");
+    min-height: 100vh;
+    height: auto;/*89.5 */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  animation: fadeIn 0.5s linear forwards; /* Fade-in animation */
+  opacity: 7;
+  }
+  #Nav_bar{
+    background-color:rgba(255, 255, 255, 0);/* #008080 */
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;  /*Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+*/
+    -moz-box-shadow:    3px 3px 5px 6px #ccc;  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 5px 6px #ccc; 
+  }
+  .nav-head{
+      display: inline-block;
+        position: relative; 
+        color: #1F2937;
+        padding-top: 10px;
+  }
+  .nav-head::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color:  #3B82F6;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+
+  }
+  .nav-head:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    #Home_background{
+      height: 89.5vh;
+      margin: 0;
+      padding: 0;
+    
+    } 
+  
+    #centered-container {
+      display: flex;
+    justify-content: center;
+      align-items: center;
+    
+    }
+
+    #centered-text {
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      /* Adjust styles for smaller screens */
+      #centered-container {
+        padding: 10px;
+      }
+      .nav-head{
+        color: #333;
+      }
+    }
+    #home_name {
+      font-size: 80px;
+      font-weight: 900;
+      color:rgb(55, 147, 239) ;
+      background-image: linear-gradient(135deg, #e0e0e0, #4c3636, #606060); /* soft smoke shades */
+      background-clip: text;
+      -webkit-background-clip: text;
+      font-family: 'Inter', sans-serif;
+      text-transform: capitalize;
+      text-shadow: 
+          0 2px 4px rgb(255, 255, 255),   /* soft base shadow */
+          0 4px 8px rgba(80, 80, 80, 0.25),     /* deeper diffusion */
+          0 6px 12px rgba(60, 60, 60, 0.2),     /* expanding haze */
+          0 10px 20px rgba(255, 255, 255, 0.15);   /* distant smog glow */
+      letter-spacing: 1px;
+      line-height: 1.2;
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px;
+  }
+    
+    
+  
+    
+  #Text_home {
+    font-weight: 700;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #e0e0e0, #888888, #3a3a3a); /* subtle smoky tones */
+    letter-spacing: 3px;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: shine 5s linear infinite;
+    position: relative;
+  }
+  
+    
+    @keyframes shine {
+      0% {
+        background-position-x: -500%;
+      }
+      100% {
+        background-position-x: 500%;
+      }
+    }
+  #container_EDU{
+    height: 83.1vh;
+    width: 100%;
+    background-color: gray;
+  }
+  .edu_Para{
+    font-size: 30px;
+  }
+  .edu_div{
+    border-radius: 2px;
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+  box-shadow:  19px 19px 38px #a8a8a8,
+              -19px -19px 38px #eae8e8;
+  }
+  /* #edu_BG{
+    background-image: url("./../Others/graduatingbackground.jpg");
+      height: 89.5vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      animation: fadeIn 0.5s ease-in-out forwards; /* Fade-in animation */
+      /*opacity: 0;
+  } */
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .experience-container {
+    text-align: center;
+    font-family: 'Inter', sans-serif; 
+  }
+
+  .experience-header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .experience-entry {
+    animation: fadeIn 0.5s linear forwards; /* Fade-in animation */
+    opacity: 0;
+    box-shadow: 15px 15px 30px #bebebe,
+              -15px -15px 30px #ffffff;
+  }
+  .experience-entry:hover {
+    transform: scale(1.01);
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100%{
+      opacity: 1;
+    }
+  }
+
+  .experience-divider {
+    margin: 3rem 0;
+    border: 0;
+    border-top: 2px solid #3498db;
+  }
+
+  .Skills_Main{
+    animation: fadeIn 0.5s linear forwards; /* Fade-in animation */
+  }
+  #Card {
+    border: none;
+    border-radius: 0;
+    background-color: rgba(255, 255, 255, 0); /* Optionally, remove border-radius if needed */
+  }
+  #Card :hover.Title_card {
+    text-decoration: underline;
+  }
+  #work_text{
+    text-align: justify;
+  }
+
+  
+  .edu_card {
+    /* width: 500px; */
+    /* height: 254px; */
+    background: lightgrey;
+    border: 3px inset white; 
+    background: #e8e8e8; 
+    box-shadow: inset 20px 20px 60px #c5c5c5, inset -20px -20px 60px #ffffff; 
+    transition: all .5s ease-in-out; 
+    border-radius: 1.5rem;  
+    font-weight: bolder;
+    color: #8a8989;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .edu_card:hover {
+    transform: translateY(-5px);
+    transition: all .5s ease-in-out;
+  }
+  .edu_hover_image{
+    display: none;
+    border-radius: 1.5rem;
+  }
+  .edu_card:hover .edu_hover_image{
+    display: block;
+    border-radius: 1.5rem;
+  }
+  /* Add space between icon and text */
+  .navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link svg {
+    margin-right: 8px; /* Adjust space between icon and text */
+  }
+
+  .nav-icon {
+    color: #3B82F6; /* Change icon color */
+  }
+
+  .nav-icon:hover {
+    color:#ece9eb; /* Change icon color on hover */
+  }
