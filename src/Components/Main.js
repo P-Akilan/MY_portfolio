@@ -26,7 +26,8 @@ const Main = () => {
 
         <div className="page-container">
           <Routes>
-            <Route path="/" element={<Home />} />
+          <Route index element={<Home />} /> 
+            {/* <Route path="/" element={<Home />} /> */}
             <Route path="/home" element={<Home />} />
             <Route path="/education" element={<Education />} />
             <Route path="/experience" element={<Experience />} />

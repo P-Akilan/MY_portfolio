@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -9,12 +9,6 @@ import AIcon from './../Others/Atransparent.gif';
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
-  const navigate = useNavigate();
-
-  const handleLinkClick = (path) => {
-    setShowNav(false);
-    navigate(path);
-  };
 
   return (
     <div>
@@ -37,19 +31,20 @@ const NavBar = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                <Nav.Link as={Link} to="/home" onClick={() => handleLinkClick('/home')}>
+                {/* No need to call handleLinkClick() anymore */}
+                <Nav.Link as={Link} to="/home">
                   <FaHome size={30} className="nav-icon" /> <h5 className='nav-head'>Home</h5>
                 </Nav.Link>
-                <Nav.Link as={Link} to="/education" onClick={() => handleLinkClick('/education')}>
+                <Nav.Link as={Link} to="/education">
                   <FaGraduationCap size={30} className="nav-icon" /> <h5 className='nav-head'>Education</h5>
                 </Nav.Link>
-                <Nav.Link as={Link} to="/experience" onClick={() => handleLinkClick('/experience')}>
+                <Nav.Link as={Link} to="/experience">
                   <FaBriefcase size={30} className="nav-icon" /> <h5 className='nav-head'>Experience</h5>
                 </Nav.Link>
-                <Nav.Link as={Link} to="/skills" onClick={() => handleLinkClick('/skills')}>
+                <Nav.Link as={Link} to="/skills">
                   <FaCogs size={30} className="nav-icon" /> <h5 className='nav-head'>Skills</h5>
                 </Nav.Link>
-                <Nav.Link as={Link} to="/myworks" onClick={() => handleLinkClick('/myworks')}>
+                <Nav.Link as={Link} to="/myworks">
                   <FaImages size={30} className="nav-icon" /> <h5 className='nav-head'>My Works</h5>
                 </Nav.Link>
                 <Nav.Link href="#action2">
