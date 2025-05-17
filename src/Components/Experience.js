@@ -97,7 +97,6 @@ const Experience = () => {
 
   return (
     <Container className="experience-container">
-      <h2 className="experience-header">Work Experience</h2>
       <Col lg={12} md={12} sm={12}>
         <Collapse
           bordered={false}

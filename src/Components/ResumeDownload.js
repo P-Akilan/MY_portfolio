@@ -17,7 +17,7 @@ const ResumeDownload = () => {
   };
 
   return (
-    <div>  
+    <div className='md'>  
       <Button  color="default" variant="solid"onClick={handleDownload}>
         Download Resume
       </Button>
